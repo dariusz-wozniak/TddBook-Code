@@ -11,7 +11,9 @@ namespace TddBook.Tests.Unit.ParametrizedTests
             Assert.That(a + b, Is.EqualTo(expectedResult));
         }
 
-        [TestCaseSource(typeof(AdditionTestData), nameof(AdditionTestData.AdditionCases))]
+        [TestCaseSource(
+            typeof(AdditionTestData),
+            nameof(AdditionTestData.AdditionCases))]
         public void addition_test_with_external_data(int a, int b, int expectedResult)
         {
             Assert.That(a + b, Is.EqualTo(expectedResult));
