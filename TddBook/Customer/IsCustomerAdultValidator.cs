@@ -12,8 +12,7 @@ namespace TddBook.Customer
 
             bool isAdult = customer.GetAge() >= AdultAge;
 
-            if (isAdult) return true;
-            return false;
+            return isAdult;
         }
     }
 }
