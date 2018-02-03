@@ -1,5 +1,5 @@
 # TddBook-Code
-Repozytorium dla książki "TDD. Techniki programowania sterowanego testami"
+Repozytorium dla książki "TDD. Techniki programowania sterowanego testami".
 
 Solucja zawiera następujące projekty:
 
@@ -10,4 +10,4 @@ Solucja zawiera następujące projekty:
 
 # Wymagania
 
-* .NET Framework 4.5
+* .NET Framework 4.7.1.
