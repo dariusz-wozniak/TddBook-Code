@@ -68,7 +68,6 @@
     <Compile Include="Refactoring\BeforeRefactoring\ICustomer.cs" />
     <Compile Include="Refactoring\BeforeRefactoring\IProduct.cs" />
     <Compile Include="Refactoring\BeforeRefactoring\IProductsRepository.cs" />
-    <Compile Include="Refactoring\BeforeRefactoring\ProductNotSupportedException.cs" />
     <Compile Include="Refactoring\BeforeRefactoring\ProductType.cs" />
     <Compile Include="Refactoring\BeforeRefactoring\UpdaterService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

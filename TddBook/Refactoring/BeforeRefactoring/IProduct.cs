@@ -7,6 +7,5 @@ namespace TddBook.Refactoring.BeforeRefactoring
         decimal Price { get; set; }
         Guid Id { get; set; }
         void MarkAsUpdated(DateTime dateTime);
-        ProductType Type { get; set; }
     }
 }

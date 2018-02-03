@@ -2,7 +2,7 @@
 
 namespace TddBook.Refactoring.BeforeRefactoring
 {
-    internal interface IProductsRepository
+    public interface IProductsRepository
     {
         List<IProduct> GetProducts();
     }
