@@ -1,5 +1,6 @@
 ﻿using Moq;
 using NUnit.Framework;
+using NUnit.Framework.Constraints;
 using TddBook.Customer;
 
 namespace TddBook.Tests.Unit.Mocking._2_ArgumentMatching
@@ -21,21 +22,26 @@ namespace TddBook.Tests.Unit.Mocking._2_ArgumentMatching
         [Test]
         public void when_validator_always_returns_true_then_customer_is_always_added()
         {
-            var validator = Mock.Of<ICustomerValidator>(v => v.Validate(It.IsAny<ICustomer>()) == true);
+            var validator = Mock.Of<ICustomerValidator>(v =>
+                v.Validate(It.IsAny<ICustomer>()) == true);
+
+            var john = Mock.Of<ICustomer>(customer => customer.FirstName == "John");
+            var james = Mock.Of<ICustomer>(customer => customer.FirstName == "James");
 
             var customerRepository = new CustomerRepository(validator);
-            customerRepository.Add(Mock.Of<ICustomer>(customer => customer.FirstName == "John"));
-            customerRepository.Add(Mock.Of<ICustomer>(customer => customer.FirstName == "James"));
+            customerRepository.Add(john);
+            customerRepository.Add(james);
 
             Assert.That(customerRepository.AllCustomers, Has.Count.EqualTo(2));
-            Assert.That(customerRepository.AllCustomers, Has.Exactly(1).Matches<ICustomer>(customer => customer.FirstName == "John"));
-            Assert.That(customerRepository.AllCustomers, Has.Exactly(1).Matches<ICustomer>(customer => customer.FirstName == "James"));
+            Assert.That(customerRepository.AllCustomers, ContainsCustomerWithFirstName("John"));
+            Assert.That(customerRepository.AllCustomers, ContainsCustomerWithFirstName("James"));
         }
 
         [Test]
         public void customer_is_added_depending_on_validation_result()
         {
-            var validator = Mock.Of<ICustomerValidator>(v => v.Validate(It.Is<ICustomer>(customer => customer.FirstName == "John")) == true);
+            var validator = Mock.Of<ICustomerValidator>(v =>
+                v.Validate(It.Is<ICustomer>(customer => customer.FirstName == "John")) == true);
 
             var customerRepository = new CustomerRepository(validator);
             customerRepository.Add(Mock.Of<ICustomer>(customer => customer.FirstName == "John"));
@@ -43,6 +49,13 @@ namespace TddBook.Tests.Unit.Mocking._2_ArgumentMatching
 
             Assert.That(customerRepository.AllCustomers, Has.Count.EqualTo(1));
             Assert.That(customerRepository.AllCustomers, Has.Exactly(1).Matches<ICustomer>(customer => customer.FirstName == "John"));
+        }
+
+        private static Constraint ContainsCustomerWithFirstName(string firstName)
+        {
+            return Has
+                .Exactly(1)
+                .Matches<ICustomer>(customer => customer.FirstName == firstName);
         }
     }
 }
