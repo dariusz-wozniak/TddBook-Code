@@ -2,7 +2,7 @@
 
 namespace TddBook.Customer
 {
-    public class CustomerRepository : ICustomerRepository
+    public class CustomerRepository
     {
         private readonly ICustomerValidator _customerValidator;
         private readonly List<ICustomer> _allCustomers;

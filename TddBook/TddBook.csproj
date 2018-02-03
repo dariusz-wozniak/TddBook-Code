@@ -50,7 +50,6 @@
     <Compile Include="Configuration\ConfigurationWrapper.cs" />
     <Compile Include="Configuration\IConfigurationWrapper.cs" />
     <Compile Include="FantasyWorld\Character.cs" />
-    <Compile Include="Customer\ICustomerRepository.cs" />
     <Compile Include="Customer\ICustomerValidator.cs" />
     <Compile Include="Customer\IOrder.cs" />
     <Compile Include="Customer\IPhoneNumber.cs" />
