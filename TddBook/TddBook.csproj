@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0154A81E-DFCE-41B4-B095-FCDBFA0472D8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TddBook</RootNamespace>
+    <AssemblyName>TddBook</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgeCalculator\AgeCalculatorBeforeRefactoring.cs" />
+    <Compile Include="AgeCalculator\CurrentDateTimeProvider.cs" />
+    <Compile Include="AgeCalculator\IDateTimeProvider.cs" />
+    <Compile Include="AgeCalculator\AgeCalculator.cs" />
+    <Compile Include="Animals\Animal.cs" />
+    <Compile Include="Animals\Dog.cs" />
+    <Compile Include="Animals\Husky.cs" />
+    <Compile Include="Calculators\Calculator.cs" />
+    <Compile Include="Calculators\CalculatorWithRegisteredNumbers.cs" />
+    <Compile Include="Calculators\GenericCalculator.cs" />
+    <Compile Include="Configuration\Configuration.cs" />
+    <Compile Include="Configuration\ConfigurationWrapper.cs" />
+    <Compile Include="Configuration\IConfigurationWrapper.cs" />
+    <Compile Include="FantasyWorld\Character.cs" />
+    <Compile Include="Customer\ICustomerRepository.cs" />
+    <Compile Include="Customer\ICustomerValidator.cs" />
+    <Compile Include="Customer\IOrder.cs" />
+    <Compile Include="Customer\IPhoneNumber.cs" />
+    <Compile Include="Customer\IsCustomerAdultValidator.cs" />
+    <Compile Include="Customer\ICustomer.cs" />
+    <Compile Include="Customer\CustomerRepository.cs" />
+    <Compile Include="CodeCoverage\Number.cs" />
+    <Compile Include="FantasyWorld\Item.cs" />
+    <Compile Include="People\Person.cs" />
+    <Compile Include="PersonWithAge\IPerson.cs" />
+    <Compile Include="PersonWithAge\Person.cs" />
+    <Compile Include="PersonWithHeight\Person.cs" />
+    <Compile Include="PersonWithHeight\PersonByHeightComparer.cs" />
+    <Compile Include="PersonWithPesel\Person.cs" />
+    <Compile Include="PersonWithPesel\PersonByPeselEqualityComparer.cs" />
+    <Compile Include="Refactoring\BeforeRefactoring\ICustomer.cs" />
+    <Compile Include="Refactoring\BeforeRefactoring\IProduct.cs" />
+    <Compile Include="Refactoring\BeforeRefactoring\IProductsRepository.cs" />
+    <Compile Include="Refactoring\BeforeRefactoring\ProductNotSupportedException.cs" />
+    <Compile Include="Refactoring\BeforeRefactoring\ProductType.cs" />
+    <Compile Include="Refactoring\BeforeRefactoring\UpdaterService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Refactoring\Refactored\ICustomer.cs" />
+    <Compile Include="Refactoring\Refactored\IProduct.cs" />
+    <Compile Include="Refactoring\Refactored\IProductsRepository.cs" />
+    <Compile Include="Refactoring\Refactored\PriceCalculator.cs" />
+    <Compile Include="Refactoring\Refactored\ProductType.cs" />
+    <Compile Include="Refactoring\Refactored\UpdaterService.cs" />
+    <Compile Include="Shapes\Rectangle.cs" />
+    <Compile Include="Shapes\Square.cs" />
+    <Compile Include="TestDoubleCustomer\CustomerReportingService.cs" />
+    <Compile Include="TestDoubleCustomer\ICustomer.cs" />
+    <Compile Include="TestDoubleCustomer\ICustomerRepository.cs" />
+    <Compile Include="TestDoubleCustomer\ICustomerValidator.cs" />
+    <Compile Include="TestDoubleCustomer\IsCustomerAdultValidator.cs" />
+    <Compile Include="TestDoubleCustomer\Customer.cs" />
+    <Compile Include="TheClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shapes\ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
