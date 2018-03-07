@@ -3,12 +3,10 @@
 
 Solucja zawiera następujące projekty:
 
-```
-TddBook                      - Logika biznesowa dla testów
-TddBook.Tests.Integration    - Testy integracyjne
-TddBook.Tests.Specifications - Testy akceptacyjne
-TddBook.Tests.Unit           - Testy jednostkowe
-```
+- `TddBook` — Logika biznesowa dla testów
+- `TddBook.Tests.Integration` — Testy integracyjne
+- `TddBook.Tests.Specifications` — Testy akceptacyjne
+- `TddBook.Tests.Unit` — Testy jednostkowe
 
 # Wymagania
 
@@ -16,4 +14,4 @@ TddBook.Tests.Unit           - Testy jednostkowe
 
 # Najczęściej zadawane pytania
 
-Jeśli masz problem z kompilacją lub uruchomieniem testów, napisz do mnie pod adres dariusz.wozniak [at] gmail.com, a ja postaram się Ci pomóc.
+Jeśli masz problem z kompilacją lub uruchomieniem testów, napisz do mnie pod adres *dariusz.wozniak [at] gmail.com*, a ja postaram się Ci pomóc.
