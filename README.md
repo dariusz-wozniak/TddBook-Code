@@ -1,7 +1,5 @@
-# TddBook-Code
+# 📘 Repozytorium dla książki "TDD. Techniki programowania sterowanego testami".
 [![Build status](https://ci.appveyor.com/api/projects/status/t61i7q1xjf9haqbp?svg=true)](https://ci.appveyor.com/project/dariusz-wozniak/tddbook-code)
-
-Repozytorium dla książki "TDD. Techniki programowania sterowanego testami".
 
 Solucja zawiera następujące projekty:
 
@@ -18,4 +16,4 @@ TddBook.Tests.Unit           - Testy jednostkowe
 
 # Najczęściej zadawane pytania
 
-Jeśli masz problem z kompilacją lub uruchomieniem testów, napisz do mnie pod adres dariusz.wozniak[at]gmail.com, a ja postaram się Ci pomóc.
+Jeśli masz problem z kompilacją lub uruchomieniem testów, napisz do mnie pod adres dariusz.wozniak [at] gmail.com, a ja postaram się Ci pomóc.
