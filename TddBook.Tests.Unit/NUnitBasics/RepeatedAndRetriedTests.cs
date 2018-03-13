@@ -23,9 +23,5 @@ namespace TddBook.Tests.Unit.NUnitBasics
             if (_retryCounter == 20) Assert.Pass();
             Assert.Fail();
         }
-
-        // Workaround for NUnit bug:
-        // https://github.com/nunit/nunit/issues/2325
-        [SetUp] public void Setup() { }
     }
 }
