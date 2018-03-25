@@ -11,7 +11,7 @@ namespace TddBook.Tests.Unit.Mocking._8_TestDoubles
         {
             string firstName = null;
 
-            // dummy:
+            // Dummy:
             string lastName = It.IsAny<string>();
 
             Assert.That(() => new TestDoubleCustomer.Customer(firstName, lastName), Throws.ArgumentNullException);
@@ -22,7 +22,7 @@ namespace TddBook.Tests.Unit.Mocking._8_TestDoubles
         {
             var customerValidator = new IsCustomerAdultValidator();
 
-            // stub:
+            // Stub:
             var customer = Mock.Of<ICustomer>(c => c.GetAge() == 21);
 
             bool validated = customerValidator.Validate(customer);
@@ -33,7 +33,7 @@ namespace TddBook.Tests.Unit.Mocking._8_TestDoubles
         [Test]
         public void fake()
         {
-            // fake:
+            // Fake:
             var customerRepository = new FakeCustomerRepository();
 
             customerRepository.Add(Mock.Of<ICustomer>(c =>
@@ -56,12 +56,12 @@ namespace TddBook.Tests.Unit.Mocking._8_TestDoubles
         {
             var customerValidator = new IsCustomerAdultValidator();
 
-            // mock:
+            // Mock:
             var customer = Mock.Of<ICustomer>(c => c.GetAge() == 21);
 
             customerValidator.Validate(customer);
 
-            // verification of mock:
+            // Weryfikacja mocka:
             Mock.Get(customer).Verify(x => x.GetAge());
         }
 
@@ -70,12 +70,12 @@ namespace TddBook.Tests.Unit.Mocking._8_TestDoubles
         {
             var customerValidator = new IsCustomerAdultValidator();
 
-            // spy:
+            // Spy:
             var customer = Mock.Of<ICustomer>(c => c.GetAge() == 21);
 
             customerValidator.Validate(customer);
 
-            // verification of spy:
+            // Weryfikacja spy:
             Mock.Get(customer).Verify(x => x.GetAge(), Times.Once);
         }
     }

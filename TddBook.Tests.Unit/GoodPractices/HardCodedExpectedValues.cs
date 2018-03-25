@@ -15,7 +15,7 @@ namespace TddBook.Tests.Unit.GoodPractices
 
             string actualPath = Path.Combine(partition, dir1, dir2, dir3);
 
-            string expectedPath = string.Join(@"\", partition, dir1, dir2, dir3); // wrong
+            string expectedPath = string.Join(@"\", partition, dir1, dir2, dir3); // Źle!
 
             Assert.That(actualPath, Is.EqualTo(expectedPath));
         }
@@ -30,7 +30,7 @@ namespace TddBook.Tests.Unit.GoodPractices
 
             string actualPath = Path.Combine(partition, dir1, dir2, dir3);
 
-            string expectedPath = @"C\Windows\System32\etc"; // ok!
+            string expectedPath = @"C\Windows\System32\etc"; // Dobrze!
 
             Assert.That(actualPath, Is.EqualTo(expectedPath));
         }
