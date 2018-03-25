@@ -1,12 +1,8 @@
 # Pierwsze kroki (1/4): Stworzenie projektów w Visual Studio
 
-## Metoda 1: Okno instalacji pakietów NuGet
+## Stworzenie projektów w Visual Studio
 
-!["Okno instalacji pakietów NuGet"](1a-install-packages-via-nuget-pm-ui.gif)
-
-## Metoda 2: Konsola NuGet Package Manager
-
-!["Konsola NuGet Package Manager"](1b-install-packages-via-nuget-pm-ps.gif)
+!["Stworzenie projektów w Visual Studio"](0-setup.gif)
 
 ## Zobacz też:
 
