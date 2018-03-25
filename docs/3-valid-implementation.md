@@ -6,4 +6,4 @@
 
 ## Zobacz też:
 
-- Poprzedni krok (3/4): [Pierwszy test jednostkowy](1-first-test.md)
+- Poprzedni krok (3/4): [Pierwszy test jednostkowy](2-first-test.md)

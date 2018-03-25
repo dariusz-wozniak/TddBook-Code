@@ -10,5 +10,5 @@
 
 ## Zobacz też:
 
-- Następny krok (3/4): [Pierwszy test jednostkowy](1-first-test.md)
+- Następny krok (3/4): [Pierwszy test jednostkowy](2-first-test.md)
 - Poprzedni krok (1/4): [Stworzenie projektów w Visual Studio](0-setup.md)
