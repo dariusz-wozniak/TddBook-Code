@@ -23,4 +23,8 @@ Jeśli masz problem z pierwszymi krokami, poniżej prezentuję filmy, które mog
 
 # Najczęściej zadawane pytania
 
-Jeśli masz problem z kompilacją lub uruchomieniem testów, napisz do mnie pod adres *dariusz.wozniak [at] gmail.com*, a ja postaram się Ci pomóc.
+Jeśli masz problem z kompilacją lub uruchomieniem testów, napisz do mnie pod adres **dariusz.wozniak [at] gmail.com**, a ja postaram się Ci pomóc.
+
+Jeśli zauważyłeś błąd w tym projekcie, napisz do mnie pod powyższy adres lub stwórz *pull request*.
+
+Jeśli znalazłeś błąd w książce, masz jakieś sugestie lub po prostu chciałbyś mi podziękować, nie omieszkaj skontaktować się ze mną; będę bardzo wdzięczny!
