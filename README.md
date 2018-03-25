@@ -8,9 +8,18 @@ Solucja zawiera następujące projekty:
 - `TddBook.Tests.Specifications` — Testy akceptacyjne
 - `TddBook.Tests.Unit` — Testy jednostkowe
 
+# Pierwsze kroki
+
+Jeśli masz problem z pierwszymi krokami, poniżej prezentuję filmy, które mogą pomóc rozpocząć pracę z projektem:
+
+1. [🎬 Stworzenie projektów w Visual Studio](/docs/0-setup.md)
+2. [🎬 Instalacja pakietów przez NuGet](/docs/1-install-packages-via-nuget.md)
+3. [🎬 Pierwszy test jednostkowy](/docs/2-first-test.md)
+4. [🎬 Właściwa implementacja](/docs/3-valid-implementation.md)
+
 # Wymagania
 
-* .NET Framework 4.7.1.
+- .NET Framework 4.7.1.
 
 # Najczęściej zadawane pytania
 
