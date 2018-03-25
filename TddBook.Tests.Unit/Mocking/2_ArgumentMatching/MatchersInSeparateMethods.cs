@@ -35,7 +35,6 @@ namespace TddBook.Tests.Unit.Mocking._2_ArgumentMatching
             get
             {
                 return It.Is<ICustomer>(x =>
-                    x != null &&
                     !string.IsNullOrEmpty(x.FirstName) &&
                     x.FirstName.StartsWith("J", StringComparison.InvariantCulture));
             }
