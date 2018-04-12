@@ -30,27 +30,15 @@ namespace TddBook.Tests.Unit.Mocking._2_ArgumentMatching
                 Has.Exactly(1).Matches<ICustomer>(customer => customer.FirstName == "John"));
         }
 
-        private ICustomer StartsWithJ
-        {
-            get
-            {
-                return It.Is<ICustomer>(x =>
-                    x != null &&
-                    !string.IsNullOrEmpty(x.FirstName) &&
-                    x.FirstName.StartsWith("J", StringComparison.InvariantCulture));
-            }
-        }
+        private ICustomer StartsWithJ => It.Is<ICustomer>(x =>
+            x != null &&
+            !string.IsNullOrEmpty(x.FirstName) &&
+            x.FirstName.StartsWith("J", StringComparison.InvariantCulture));
 
         // ReSharper disable once UnusedMember.Local
         // ReSharper disable once InconsistentNaming
-        private ICustomer StartsWithJ_ByMatchCreate
-        {
-            get
-            {
-                return Match.Create<ICustomer>(x =>
-                    !string.IsNullOrEmpty(x?.FirstName) &&
-                    x.FirstName.StartsWith("J", StringComparison.InvariantCulture));
-            }
-        }
+        private ICustomer StartsWithJ_ByMatchCreate => Match.Create<ICustomer>(x =>
+            !string.IsNullOrEmpty(x?.FirstName) &&
+            x.FirstName.StartsWith("J", StringComparison.InvariantCulture));
     }
 }
