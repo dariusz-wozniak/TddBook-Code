@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 using TddBook.Calculators;
 using TechTalk.SpecFlow;
 
@@ -21,7 +21,7 @@ namespace TddBook.Tests.Specifications
         {
             _calculator.SecondNumber = number;
         }
-        
+
         [When(@"I press add")]
         public void WhenIPressAdd()
         {
