@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddBook.Tests.Integration",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddBook.Tests.Unit", "TddBook.Tests.Unit\TddBook.Tests.Unit.csproj", "{85C5EDB0-E4FD-4B80-A8FD-790DCB23DA8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddBook.Tests.Specifications", "TddBook.Tests.Specifications\TddBook.Tests.Specifications.csproj", "{916B2730-3A12-40FE-9AE5-911558CBA3D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddBook.Tests.Specifications", "TddBook.Tests.Specifications\TddBook.Tests.Specifications.csproj", "{51960C27-DC23-48E0-81A6-ADF6B546FAC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{85C5EDB0-E4FD-4B80-A8FD-790DCB23DA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85C5EDB0-E4FD-4B80-A8FD-790DCB23DA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85C5EDB0-E4FD-4B80-A8FD-790DCB23DA8F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{916B2730-3A12-40FE-9AE5-911558CBA3D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{916B2730-3A12-40FE-9AE5-911558CBA3D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{916B2730-3A12-40FE-9AE5-911558CBA3D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{916B2730-3A12-40FE-9AE5-911558CBA3D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51960C27-DC23-48E0-81A6-ADF6B546FAC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51960C27-DC23-48E0-81A6-ADF6B546FAC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51960C27-DC23-48E0-81A6-ADF6B546FAC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51960C27-DC23-48E0-81A6-ADF6B546FAC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
