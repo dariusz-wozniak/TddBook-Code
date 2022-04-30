@@ -1,5 +1,4 @@
 # 📘 Repozytorium dla książki "TDD. Techniki programowania sterowanego testami"
-[![Build status](https://ci.appveyor.com/api/projects/status/t61i7q1xjf9haqbp?svg=true)](https://ci.appveyor.com/project/dariusz-wozniak/tddbook-code)
 
 Link do książki: https://helion.pl/ksiazki/tdd-techniki-programowania-sterowanego-testami-dariusz-wozniak,tddppr.htm.
 
